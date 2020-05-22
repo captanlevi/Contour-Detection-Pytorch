@@ -67,6 +67,10 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 3) Download the DenseCRF refined segmantation maps for PASCAL-2012 dataset. And place them in *SegmentationObjectFilledDenseCRF* folder.
 4) Run the *extract_contours.py* file to process the segmentation maps into countour labels. Or you can just download my preprocessed labels from [here](https://drive.google.com/drive/folders/12B89J4aQ3n1nghNhXBNUowNP0smfzISe?usp=sharing) and place them in *improved_contours* folder
 5) Run *train.py* file to train the model on train data for 30 epochs.Note that it will save model after each epoch and place it in *models* folder.
+```
+I have also provided a option of resuming training, run train.py with the last model saved as a command line agrument to resume the training from that model.  
+exmple python train.py 20
+```
 
 
 ### Evaluation
