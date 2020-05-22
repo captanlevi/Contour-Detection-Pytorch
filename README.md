@@ -3,3 +3,8 @@ In this work I replicate the [Object Contour Detection with a Fully Convolutiona
 
 ## Dataset
 As mentioned in the paper, We use DenseCRF refined segmentation maps as the raw labels. These labels are then processed using a 3-3 mask to turn them into counter detection target. 
+
+| *Segmantation map* | *Processed label* |
+|--------------------| -----------------|
+|![](./Images/cycle_seg.png)  | ![](./Images/cycle_con.png) |
+
