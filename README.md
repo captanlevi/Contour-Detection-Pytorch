@@ -74,9 +74,10 @@ This will run all the images in the validation set in their orignal sizes thorug
 
 
 ## Try it yourself !!!!
+Train your model and then rename it as *best_model.pth* and store in *models* folder. Or download my best model from [this link](https://drive.google.com/file/d/1-T5ZUu45O_76IxWlSp8RXGSPlQ-BZ288/view?usp=sharing)
 I have provided *ContourDetector.py* , running this file is simple, like so...  
 ```
 python Contourdetector.py path_to_your_rgb_channeled_image  
 ```
-Running this with pass you image through the **best model** that I have obtained, using the best threshold, and display the extracted countours on your screen !!!.  
+Running this with pass you image through the **best model** that I/you have obtained, using the threshold of .5 , and display the extracted countours on your screen !!!.  
 Have fun.
