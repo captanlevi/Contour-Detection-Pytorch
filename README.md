@@ -8,6 +8,7 @@ The dataset used is PASCAL-2012 , I have used the train set for training and val
 |----------------|--------------------| -----------------|
 |![](./Images/cycle.jpg) |![](./Images/cycle_seg.png)  | ![](./Images/cycle_con.png) |
 
+
 ```
 Run the file extract_contours.py to convert the provided segmentation maps into processed labels. (labels stored in the folder "improved contours" )
 ```
@@ -50,6 +51,8 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 | *Orignal image* | *Extracted_contour* | *Orignal image* | *Extracted_contour* |
 |-----------------|---------------------|-----------------|---------------------|
 |![](./Images/test.jpg) | ![](./Images/output.png)|![](./Images/test1.jpg) | ![](./Images/output1.png)|
+|![](./Images/friends_small.jpg) | ![](./Images/output3.png)|
+
 
 
 
