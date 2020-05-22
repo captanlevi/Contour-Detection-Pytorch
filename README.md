@@ -12,4 +12,10 @@ As mentioned in the paper, We use DenseCRF refined segmentation maps as the raw 
 Run the file extract_contours.py to convert the provided segmentation maps into processed labels. (labels stored in the folder "improved contours" )
 ```
 
+### Data augmentation
+I perform the same augmentations as mentioned in the paper.  
+1) Random crop (224*224)
+2) Color jitter (from transforms in pytorch)
+3) Horizintal flip
+
 
