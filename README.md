@@ -48,10 +48,12 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 
 ### Examples
 
-| *Orignal image* | *Extracted_contour* | *Orignal image* | *Extracted_contour* |
-|-----------------|---------------------|-----------------|---------------------|
-|![](./Images/ayush_battu_small.jpg) | ![](./Images/ayush_out.png) |![](./Images/friends_small.jpg) | ![](./Images/output3.png)|
-|![](./Images/test1.jpg) | ![](./Images/output1.png)|![](./Images/test.jpg) | ![](./Images/output.png)|
+| *Orignal image* | *Extracted_contour* |
+|-----------------|---------------------|
+|![](./Images/ayush_battu_small.jpg) | ![](./Images/ayush_out.png) |
+|![](./Images/friends_small.jpg) | ![](./Images/output3.png)|
+|![](./Images/test1.jpg) | ![](./Images/output1.png)|
+|![](./Images/test.jpg) | ![](./Images/output.png)|
 
 
 
