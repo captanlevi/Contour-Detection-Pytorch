@@ -8,7 +8,7 @@ paths = {
 "images_path" : "./JPEGImages",
 "targets_path" : "./improved_contours",
 "train_names_path" : "./train.txt",
-"val_names_path" : "./dummy_val.txt",
+"val_names_path" : "./val.txt",
 "results_path" : "./results",
 "models_path" : "./models",
 "CRF_mask_path" :"./SegmentationObjectFilledDenseCRF"
