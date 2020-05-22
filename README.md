@@ -8,3 +8,6 @@ As mentioned in the paper, We use DenseCRF refined segmentation maps as the raw 
 |----------------|--------------------| -----------------|
 |![](./Images/cycle.jpg) |![](./Images/cycle_seg.png)  | ![](./Images/cycle_con.png) |
 
+```
+Run the file extract_contours.py to convert the provided segmentation maps into processed labels
+```
