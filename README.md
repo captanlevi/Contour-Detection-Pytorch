@@ -44,9 +44,9 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 
 ### Examples
 
-| *Orignal image* | *Extracted_contour* |
-|-----------------|---------------------|
-|![](./Images/test.jpg) | ![](./Images/output.png)|
+| *Orignal image* | *Extracted_contour* | *Orignal image* | *Extracted_contour* |
+|-----------------|---------------------|-----------------|---------------------|
+|![](./Images/test.jpg) | ![](./Images/output.png)|![](./Images/test1.jpg) | ![](./Images/output1.png)|
 
 
 
