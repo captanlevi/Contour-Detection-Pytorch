@@ -44,6 +44,7 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 
 
 ## How to run 
+### Training
 1) Clone the project.
 2) Download the train images from [this link](https://drive.google.com/drive/folders/1UtoI52NtRX_-UHq3mwVeTnVhhXP6Tv0T?usp=sharing). And place them in the *JPEGimages* folder
 3) Download the DenseCRF refined segmantation maps for PASCAL-2012 dataset. And place them in *SegmentationObjectFilledDenseCRF* folder.
