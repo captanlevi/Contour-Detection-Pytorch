@@ -25,4 +25,6 @@ The model used a pretrained vgg-16 network as encoder, a symmetric light weight 
 ## Training details
 I use mini-batch size of 8, that is a single image randomly cropped four times and then flipped horizontally and cropped four times. A total of 10,383 training examples from the PASCAL datast have been used. The model is traning for 30 epochs , each epoch goes over all images once. The learning rate is fixed at 1e-4. Optimizer used is Adam.
 
+## Results
+We have achived f1 score of 50% , compared to 57% of the paper.
 
