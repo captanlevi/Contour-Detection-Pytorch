@@ -40,3 +40,22 @@ For more implementation details ,memory management and queue size control refer 
 ## Results
 We have achived f1 score of 50% , compared to 57% of the paper.
 
+
+
+
+## How to run 
+1) Clone the project.
+2) Download the train images from [this link](https://drive.google.com/drive/folders/1UtoI52NtRX_-UHq3mwVeTnVhhXP6Tv0T?usp=sharing). And place them in the *JPEGimages* folder
+3) Download the DenseCRF refined segmantation maps for PASCAL-2012 dataset. And place them in *SegmentationObjectFilledDenseCRF* folder.
+4) Run the *extract_contours.py* file to process the segmentation maps into countour labels. Or you can just download my preprocessed labels from [here](https://drive.google.com/drive/folders/12B89J4aQ3n1nghNhXBNUowNP0smfzISe?usp=sharing) and place them in *improved_contours* folder
+5) Run *train.py* file to train the model on train data for 30 epochs.Note that it will save model after each epoch and place it in *models* folder.
+
+
+### Evaluation
+To evaluate any model , follow the following steps.
+
+1) Run *make_results.py* with model name you want to evaluate as the first and only command line argument.
+``` 
+This will run all the images in the validation set in their orignal sizes thorugh the model and save the output in results folder in .npy format
+```
+2) After results are made run *Eval.py* , this will output the P-R curve for the model and print the best threshold and corrosponding f1 score on the console. 
