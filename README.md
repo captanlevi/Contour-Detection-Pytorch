@@ -16,6 +16,9 @@ Run the file extract_contours.py to convert the provided segmentation maps into 
 I perform the same augmentations as mentioned in the paper.  
 1) Random crop (224*224)
 2) Color jitter (from transforms in pytorch)
-3) Horizintal flip
+3) Horizontal flip
+
+## Model
+The model used a pretrained vgg-16 network as encoder, a symmetric light weight decoder. During training only the decoder is trained as mentioned in the paper. The decoder makes use of unpooling layers to upsample, each unpooling layer recives corrosponding indices from the relevant pooling layer in the decoder.
 
 
