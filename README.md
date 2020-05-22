@@ -50,14 +50,15 @@ We have achived f1 score of 50% , compared to 57% of the paper.
 
 | *Orignal image* | *Extracted_contour* | *Orignal image* | *Extracted_contour* |
 |-----------------|---------------------|-----------------|---------------------|
-|![](./Images/test.jpg) | ![](./Images/output.png)|![](./Images/ayush_battu_small.jpg) | ![](./Images/ayush_out.png)|
+![](./Images/ayush_battu_small.jpg) | ![](./Images/ayush_out.png)|
 
-
+|![](./Images/friends_small.jpg) | ![](./Images/output3.png)|
 | *Orignal image* | *Extracted_contour* |
 |-----------------|---------------------|
 |![](./Images/test1.jpg) | ![](./Images/output1.png)|
 | *Me and my friends* | *Extracted_contour* |
-|![](./Images/friends_small.jpg) | ![](./Images/output3.png)|
+|![](./Images/test.jpg) | ![](./Images/output.png)|
+
 
 
 
