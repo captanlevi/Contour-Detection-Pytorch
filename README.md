@@ -42,6 +42,9 @@ For more implementation details ,memory management and queue size control refer 
 ## Results
 We have achived f1 score of 50% , compared to 57% of the paper.
 
+### PR curve
+![](./Images/PR_curve.png)
+
 ### Examples
 
 | *Orignal image* | *Extracted_contour* | *Orignal image* | *Extracted_contour* |
