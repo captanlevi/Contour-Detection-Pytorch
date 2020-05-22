@@ -25,6 +25,8 @@ The model used a pretrained vgg-16 network as encoder, a symmetric light weight 
 ## Training details
 I use mini-batch size of 8, that is a single image randomly cropped four times and then flipped horizontally and cropped four times. A total of 10,383 training examples from the PASCAL datast have been used. The model is traning for 30 epochs , each epoch goes over all images once. The learning rate is fixed at 1e-4. Optimizer used is Adam.
 
+The problem is treated as pixel classification problem , where the contour pixels are labeled as 1 and non contour pixels as 0. BCE loss is used to train the model. As the number of non contour pixels far surpasses the contour ones, the loss weight for contour pixels is 10 times that of their counterpart.
+
 ### Multi-Processing (making dataloading parallel)
 One of the biggest problems faced in this work is the slow speed of data streaming from google drive. As training was done on google colab, many disc seeks were made on google drive. If this goes on in a blocking way the speed benifit offered by GPUs will not be utilized to the maximium.  
 To counter this I have used multiprocessing to run several dataloaders in parallel, they take up the data from google drive(or your PC) and then put it into a thread/process safe Queue , the data from the queue is poped one by one and fed to the trainer object that uses it to train the model.  
@@ -60,3 +62,12 @@ To evaluate any model , follow the following steps.
 This will run all the images in the validation set in their orignal sizes thorugh the model and save the output in results folder in .npy format
 ```
 2) After results are made run *Eval.py* , this will output the P-R curve for the model and print the best threshold and corrosponding f1 score on the console. 
+
+
+## Try it yourself !!!!
+I have provided *ContourDetector.py* , running this file is simple, like so...  
+```
+python Contourdetector.py path_to_your_rgb_channeled_image  
+```
+Running this with pass you image through the **best model** that I have obtained, using the best threshold, and display the extracted countours on your screen !!!.  
+Have fun.
