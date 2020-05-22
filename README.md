@@ -20,5 +20,6 @@ I perform the same augmentations as mentioned in the paper.
 
 ## Model
 The model used a pretrained vgg-16 network as encoder, a symmetric light weight decoder. During training only the decoder is trained as mentioned in the paper. The decoder makes use of unpooling layers to upsample, each unpooling layer recives corrosponding indices from the relevant pooling layer in the decoder.
+![](./Images/model.png)
 
 
